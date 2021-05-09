@@ -1,0 +1,40 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-outline-light {
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  background-color: #000;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0080ff;
+  border-color: #0080ff;
+}
+
+#CardId {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 7px 10px #aaaaaa;
+          box-shadow: 8px 7px 10px #aaaaaa;
+}
+
+.card-header {
+  background: rgba(170, 170, 170, 0.8);
+  -webkit-backdrop-filter: saturate(180), blur(5px);
+          backdrop-filter: saturate(180), blur(5px);
+}
+/*# sourceMappingURL=base.css.map */

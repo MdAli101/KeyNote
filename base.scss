@@ -1,0 +1,38 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-outline-light {
+    transition: all 1.5s ease-in-out;
+    background-color: #000;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #0080ff;
+    border-color: #0080ff;
+}
+#CardId {
+    // max-width: 40%;
+    display: flex !important;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 8px 7px 10px rgb(170, 170, 170);
+}
+.card-header {
+    background: rgba(170, 170, 170, 0.8);
+    backdrop-filter: saturate(180), blur(5px);
+}
+// #buttonId {
+//     padding-left: 40px;
+//     padding-right: 40px;
+//     border: 1px solid transparent;
+//     border-radius: 10px;
+//     display: flex;
+//     margin-left: 450px;
+//     margin-right: 450px
+// }
