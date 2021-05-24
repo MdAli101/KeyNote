@@ -150,7 +150,7 @@ main section.SubHeroSections .ovelapper-wrapper {
     margin-right: 200px;
     margin-left: 200px;
 }
-.all {
+.everythingHeading {
     margin-top: 150px;
 }
 .headings {
@@ -170,7 +170,66 @@ main section.SubHeroSections .ovelapper-wrapper {
     letter-spacing: -0.022em;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 /* Sections */
+.recommendedArea .EverythingSection .cardsLayout,
+.recommendedArea .EverythingSection .carksStyle,
+.recommendedArea .EverythingSection .cardsLooks {
+    width: 990px !important;
+    height: 85vh !important;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    /* width: 1010px;
+    height: 600px; */
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/*Grabing all the sections in the section of line no. */
+.recommendedArea.EverythingSection.informationCradsProtocol {
+}
+
+/*Even inside them*/
+.headerSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ParametersSection {
+    /* margin: 25px 0px 0px;
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-size: 19px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.allWorks-card {
+    height: 30px;
+    width: 50vw;
+    margin-bottom: 450px;
+}
 
 
 
