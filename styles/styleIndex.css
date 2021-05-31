@@ -9,6 +9,7 @@
 :root {
     --global-blue-links: #0066cc;
     --global-button-clr: #0071e3; 
+    --global-disabled-button-hover: #9f9f9f;
     --r-localnav-height: 52px;
 }
 /*navbar*/
@@ -21,6 +22,7 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(29, 29, 31);
     font-style: normal;
+    text-decoration: none;
 }
 nav.navigationMenu {
     display: flex;
@@ -36,6 +38,7 @@ nav.navigationMenu {
     padding: 0px 22px;
     max-width: 9992px;
     border-bottom: groove;
+    text-decoration: none;
 }
 
 .logo {
@@ -44,6 +47,11 @@ nav.navigationMenu {
 }
 nav ul.navigation-holder {
     display: flex;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
 }
 nav ul.navigation-holder button.listContainer {
     font-size: 12px;
@@ -55,12 +63,11 @@ nav ul.navigation-holder button.listContainer {
 nav ul.navigation-holder button.listContainer:hover {
     color: var(--global-blue-links)
 }
-.DownloadButton {
+.DownloadButton a{
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    white-space: nowrap;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font-size: 12px;
     line-height: 1.33337;
     font-weight: 400;
@@ -74,6 +81,12 @@ nav ul.navigation-holder button.listContainer:hover {
     background: rgb(0, 113, 227);
     border: 1px solid rgb(0, 113, 227);
     border-radius: 12px;
+}
+#listContainer-2 {
+    opacity: 0.6;
+}
+#listContainer-2:hover{
+    color: var(--global-disabled-button-hover);
 }
 /*done coding navbar*/
 
@@ -175,13 +188,13 @@ main section.SubHeroSections .ovelapper-wrapper {
 .recommendedArea .EverythingSection .cardsLayout,
 .recommendedArea .EverythingSection .carksStyle,
 .recommendedArea .EverythingSection .cardsLooks {
-    width: 990px !important;
-    height: 85vh !important;
+    width: 80vw !important;
+    height: 600px !important;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
     margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 100px;
     margin-bottom: 50px;
     /* width: 1010px;
     height: 600px; */
@@ -208,15 +221,6 @@ main section.SubHeroSections .ovelapper-wrapper {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .ParametersSection {
-    /* margin: 25px 0px 0px;
-    margin-left: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 17px;
-    line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size: 19px;
     line-height: 1.4211;
     font-weight: 400;
@@ -226,6 +230,9 @@ main section.SubHeroSections .ovelapper-wrapper {
     margin-left: 50px;
 }
 .allWorks-card {
+    background-size: 90px;
+    display: flex;
+    flex-direction: column;
     height: 30px;
     width: 50vw;
     margin-bottom: 450px;
