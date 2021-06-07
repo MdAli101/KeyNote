@@ -3,11 +3,11 @@ showNotes();
 
 //User adds a note it to localStorage
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function (e) {
+addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
-    notesObj = [];
+    notesObj = [];  
   } else {
     notesObj = JSON.parse(notes);
   }
@@ -17,6 +17,7 @@ addBtn.addEventListener("click", function (e) {
   console.log(notesObj);
   showNotes(); //declared a function
 });
+
 
 //function to show localStorae notes:
 function showNotes() {
