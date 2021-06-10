@@ -3,6 +3,8 @@ let addNotesButton = document.getElementById('addBtn');
 let CreateNewOne = document.getElementById('AddNotes').addEventListener('click', function(){
     AddPlatform.innerHTML = `
     <img src="/styles/CloseButtonMac.png" class="closeMenuButton" id="CloseButton"></img>   
+    <img src="/styles/DisabledCloseButton.png" class="closeMenuButton" id="CloseButtondisabled-1"></img>   
+    <img src="/styles/DisabledCloseButton.png" class="closeMenuButton" id="CloseButtondisabled-2"></img>   
     <div class="holder-menu-items" style="display: block;">    
         <h5 class="card-header">Give Your Life a Schedule</h5>
         <div class="card-body">
