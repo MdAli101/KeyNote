@@ -104,6 +104,15 @@ main section.heroSection .hero-conent {
     background-attachment: fixed;
     position: relative;
 }
+.subHeroSubClass{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+    .intro-Appear {
+        opacity: 1;
+        transform: translate(0px);
+    }
 main section.SubHeroSections .ovelapper-wrapper {
     z-index: 1;
     height: 500px;
@@ -163,9 +172,16 @@ main section.SubHeroSections .ovelapper-wrapper {
     margin-right: 200px;
     margin-left: 200px;
 }
-.everythingHeading {
+.everythingHeading  {
+    /* opacity: 0; */
     margin-top: 150px;
+    /* transform: translateY(20px); 
+    transition: 0.5s all ease-in-out; */
 }
+/* .flashAppear {
+    opacity: 1;
+    transform: translateY(0px);
+} */
 .headings {
     display: flex;
     color: #1D1D1F;
