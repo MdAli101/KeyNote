@@ -1,0 +1,261 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+:root {
+    --global-blue-links: #0066cc;
+    --global-button-clr: #0071e3; 
+    --global-disabled-button-hover: #9f9f9f;
+    --r-localnav-height: 52px;
+}
+/*navbar*/
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 29, 31);
+    font-style: normal;
+    text-decoration: none;
+}
+nav.navigationMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: saturate(180%) blur(20px);
+    height: var(--r-localnav-height);
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 0px 22px;
+    max-width: 9992px;
+    border-bottom: groove;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 600;
+}
+nav ul.navigation-holder {
+    display: flex;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+}
+nav ul.navigation-holder button.listContainer {
+    font-size: 12px;
+    padding: 2px 10px;
+    list-style: none;
+    background-color: transparent;
+    border: transparent;
+}
+nav ul.navigation-holder button.listContainer:hover {
+    color: var(--global-blue-links)
+}
+.DownloadButton a{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-width: 23px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: rgb(0, 113, 227);
+    border: 1px solid rgb(0, 113, 227);
+    border-radius: 12px;
+}
+#listContainer-2 {
+    opacity: 0.6;
+}
+#listContainer-2:hover{
+    color: var(--global-disabled-button-hover);
+}
+/*done coding navbar*/
+
+/* Hero Section */
+.heroSection {
+    height: 100vh;
+}
+main section.heroSection .hero-conent {
+    background: url('/styles/HEro.jpg');
+    background-repeat: no-repeat;
+    margin-left: 170px;
+    z-index: -1;
+    background-size: cover;
+    height: 610px;
+    background-attachment: fixed;
+    position: relative;
+}
+.subHeroSubClass{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+    .intro-Appear {
+        opacity: 1;
+        transform: translate(0px);
+    }
+main section.SubHeroSections .ovelapper-wrapper {
+    z-index: 1;
+    height: 500px;
+    margin-top: -121px;
+    margin-top: -310px; 
+}
+.subHeroSubClass {
+    /* display: flex;
+    flex-direction: column; */
+    display: block;
+    text-align: center;
+    direction: ltr;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    justify-content: center;
+    margin-top: 290px;
+    height: 50vh;
+    padding: 1px 300px;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.subHeroSubClass a{
+    color: var(--global-blue-links);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.subHeroSubClass a:hover {
+    color: var(--global-blue-links);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 45px;
+}
+.subHeroSubClass .linksSection {
+    margin-top: 25px;
+}
+.subHeroSubClass img {
+    height: 20px;
+    margin-bottom: -4px;
+    margin-right: -10px;
+}
+/*done doing hero section*/
+
+/* Creating recommendedArea */
+.recommendedArea {
+    background-color: #F5F5F7;
+    display: flex;
+    flex-direction: column;
+}
+    /* areas inside this */
+.recommendedArea .EverythingSection {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.everythingHeading  {
+    /* opacity: 0; */
+    margin-top: 150px;
+    /* transform: translateY(20px); 
+    transition: 0.5s all ease-in-out; */
+}
+/* .flashAppear {
+    opacity: 1;
+    transform: translateY(0px);
+} */
+.headings {
+    display: flex;
+    color: #1D1D1F;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.descriptionArea {
+    margin: 25px 0px 0px;
+    font-size: 20px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Sections */
+.recommendedArea .EverythingSection .cardsLayout,
+.recommendedArea .EverythingSection .carksStyle,
+.recommendedArea .EverythingSection .cardsLooks {
+    width: 80vw !important;
+    height: 600px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    /* width: 1010px;
+    height: 600px; */
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/*Grabing all the sections in the section of line no. */
+.recommendedArea.EverythingSection.informationCradsProtocol {
+}
+
+/*Even inside them*/
+.headerSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ParametersSection {
+    font-size: 19px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.allWorks-card {
+    background-size: 90px;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 50vw;
+    margin-bottom: 450px;
+}
+
+
+
+
+
+
